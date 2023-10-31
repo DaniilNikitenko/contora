@@ -1,0 +1,45 @@
+.about {
+    padding-bottom: 70px;
+}
+
+.container {}
+
+.about__title {
+    margin-bottom: 40px;
+}
+
+.title {}
+
+.about__block {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.about__content {
+    flex: 0 1 40%;
+}
+
+.about__title-text {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.about__text {
+    font-size: 18px;
+    color: #3c3c3c;
+}
+
+.about__columns {
+    flex: 0 1 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.about__column {
+    background-color: #c2c2c2;
+    padding: 20px 20px 100px 20px;
+}
