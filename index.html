@@ -26,13 +26,13 @@
       <div class="container header__container">
         <div class="header__logo-block">
           <img src="img/ico.svg" alt="Лого" />
-          <p class="header__text">BuhOne</p>
+          <a href="#" class="header__text">BuhOne</a>
         </div>
         <div class="header__menu menu">
-          <a href="#" class="menu__link nav-text">услуги</a>
-          <a href="#" class="menu__link nav-text">О компании</a>
-          <a href="#" class="menu__link nav-text">Контакты</a>
-          <a href="#" class="menu__link nav-text">Команда</a>
+          <a href="#work" class="menu__link nav-text">услуги</a>
+          <a href="#about" class="menu__link nav-text">О компании</a>
+          <a href="#reviews" class="menu__link nav-text">Отзывы</a>
+          <a href="team.html" class="menu__link nav-text">Команда</a>
         </div>
       </div>
     </header>
@@ -40,11 +40,11 @@
       <section class="hero">
         <div class="container hero__container">
           <h1 class="hero__title">Услуги адвоката в Санкт-Петербурге</h1>
-          <a class="hero__link" href="#">Наши контакты</a>
+          <a class="hero__link" href="#contact">Наши контакты</a>
           <img class="hero__img" src="img/main/01.jpg" alt="Hero" />
         </div>
       </section>
-      <section class="work">
+      <section class="work" id="work">
         <div class="container">
           <h2 class="work__title title">Мы специализируемся</h2>
           <div class="work__columns">
@@ -61,7 +61,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <h2 class="about__title title">О нас</h2>
           <div class="about__block">
@@ -93,7 +93,7 @@
           </div>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="container reviews__container">
           <div class="reviews__title title">Отзывы</div>
           <div class="swiper mySwiper">
@@ -124,7 +124,7 @@
                   <div class="reviews__user">
                     <div class="reviews__user-img">
                       <img
-                        src="img/reviews/01.jpg"
+                        src="img/reviews/04.jpg"
                         alt="Фото человека оставивившего отзыв"
                       />
                     </div>
@@ -141,7 +141,7 @@
                   <div class="reviews__user">
                     <div class="reviews__user-img">
                       <img
-                        src="img/reviews/01.jpg"
+                        src="img/reviews/05.jpg"
                         alt="Фото человека оставивившего отзыв"
                       />
                     </div>
@@ -159,7 +159,7 @@
                   <div class="reviews__user">
                     <div class="reviews__user-img">
                       <img
-                        src="img/reviews/01.jpg"
+                        src="img/reviews/03.jpg"
                         alt="Фото человека оставивившего отзыв"
                       />
                     </div>
@@ -177,7 +177,7 @@
                   <div class="reviews__user">
                     <div class="reviews__user-img">
                       <img
-                        src="img/reviews/01.jpg"
+                        src="img/reviews/02.jpg"
                         alt="Фото человека оставивившего отзыв"
                       />
                     </div>
@@ -192,7 +192,57 @@
           </div>
         </div>
       </section>
+      <section class="contact" id="contact">
+        <div class="container contact__container">
+          <div class="contact__flex-block">
+            <div class="contact__content">
+              <h2 class="contact__title">Связь с нами</h2>
+              <p class="contact__text">
+                У вас остались вопросы? Напишите нам - мы ответим в ближайшее
+                время!
+              </p>
+              <div class="contact__links">
+                <a href="tel:+7 (111) 222-33-44" class="contact__link tel"
+                  >+7 (111) 222-33-44</a
+                >
+                <a href="mail:order@bu-one.ru" class="contact__link mail"
+                  >order@bu-one.ru</a
+                >
+              </div>
+            </div>
+            <form class="contact__form" action="#">
+              <div class="block-input name">
+                <label for="first-name">Имя</label>
+                <input id="first-name" type="text" placeholder="Иван" />
+              </div>
+              <div class="block-input name">
+                <label for="last-name">Фамилия</label>
+                <input id="last-name" type="text" placeholder="Иванов" />
+              </div>
+              <div class="block-input message">
+                <label for="message">Сообщение</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Ваше сообщение"
+                ></textarea>
+              </div>
+              <button type="submit" class="contact__button">
+                Отправить сообщение
+              </button>
+            </form>
+          </div>
+        </div>
+        <img class="contact__img" src="img/form/back.jpg" alt="back" />
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container footer__container">
+        <p class="footer__text">2019 (с) Все права защищены. БухОне.ру</p>
+        <p class="footer__text">Разработано: BuhOne</p>
+      </div>
+    </footer>
   </body>
 </html>

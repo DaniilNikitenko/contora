@@ -1,0 +1,15 @@
+.footer {
+    background-color: #fff;
+}
+
+.container {}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px;
+}
+
+.footer__text {
+    color: #4e4e4e;
+}
